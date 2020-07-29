@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Robot</title>
     <link
       rel="icon"
       type="image/png"
@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <button id="button-joke">Tell Me A Joke</button>
+      <audio id="audio-joke" controls hidden></audio>
+    </div>
+
+    <script src="voice-to-speech.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

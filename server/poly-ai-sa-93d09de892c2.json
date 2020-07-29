@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "poly-team-core",
+  "private_key_id": "93d09de892c24cabe545b0d66b248e7379620868",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFjJJaX6sdg1UA\n/oMA3My+z265ALo3hApULRloKCq+0rQwExPgPb/VLt+gWZ2Yv1WSF4qOp6cn62x1\nqtSdpsRCOowqwLk10ZyUYPy8BsMixZrJN4e7aUWFp7E1iWjvhf+771s6E6tEcInK\nGzsLXYGj20xFP18bqAAfTpQq1B+Tn04IZFDGBJFONVRO1lV5q+THUUlJrQmzvdOz\nWUU87xqQlddFIFhxFm7CpA77PR/mJeM5ftacAdm2o1Z+YTEGrW485m9sj8HlBhtx\nPkLfh28kHSLxpj52UmCmdOMqg6EAamJc2imGbqcw5R5WGJm2thSdrRaVTcl+Xidj\nLlYdS4N3AgMBAAECggEAWQCMvX/Fsc3GQeTo874G1t7Q9TPhMfrgxmztOfKC06dN\nfC1UMp7Pa0YrhWxqpvNpI6FMkRnyovcbzeWx1fdZC7eiB+79YsR15ZnOtA3d47Ag\nnRBSLDrxEhbrrYGjj+qQvcTIlqFe8746Lh7Xmra9nivCsJ4tBOJLb89wzNz1/wUn\nFGUV/cWXrZxzBQRGHreJud3+E6OUpLA2F1TEkI96ujNU3lvr8q7yV4VThzSRvFRt\nTfwOrc2mdncnv2V7HsaprJG38ohgsTdJmwBfPR4dT5MQJMJQNTkvgY9FgEUlft4E\n68pQffo5m3ka7FacnNRGUZrV7s8D5vBOeMqgyaLfrQKBgQDzi3G/hxcgOMzXW2Vl\ndqxXvHsmnA81HnYNHz2q4ABePK9pH4txSP+jwFO8YzozunCoA0BzhOUcP+V4/Ovk\nPwqZJWA/H34fkcH1i6tXOJAOsxZ6yGwzqtTfUHTsiCI4OtD4JgIrfxfdzoSUsUYE\nQUEClGRqC5j8wdLUZjXNNxgfHQKBgQDPpvCqTcmXSpTM3CRQTGcmwbkqH+5zsiYk\nQ4dGRKNqUtm7cJW4OVkSa9ZH4asGWMzUkh01j1+aKYYnNvq5otHt4dtREVvf9w8d\nNgml2USC9uqTnUBc7nZb55dmijhDO/XHtw+Df8q6VeGsFQ/kHXx/4B3VlM8RjVZv\n1lt6Z5xEowKBgGOLVHPnYIFwFfHUTo55QhoeVOvED8czaycT5N3J7vyVq1C5bwJf\nxvWEb/VpTWnFQ7S4l4hgAlFYoI+iOTyys79C8qL6WU/IANI/Q0pEOUV417BZ6Tf5\nFEcumIvxXKNFDxLOXkavDO9BMRmhl6+3iD3or15U3TQ6eNUN7eGyKi7VAoGBAJcz\n3yCTPcxdcVZuoj6aM65D97mVwMMcIKvdRB5Fkpy0MXlMNKkNkS9ZuJFk4GzhslzC\n/GPov1t5Cwd5AD62MZi/EjzIoBbIRogltga+2yVl+E9+fMRum162l0cCNI+4lHJV\neQVuw0bFjGsKdyTK18IhhnfkQJduTFdpRfkugtpzAoGAR68GbLVwtcyoiRvTSP35\ni9FRl+2oVuOWTklZvDM1PWS1OjalESjb+bBOmWIPGGjRm7aJFz1om0juM6ivznW1\nrBaXjLqZNTKGb81xxHLm2kEQki9WIcwMh+KTQZp77GajWtX9n/fGu8qIjCtyoX/x\nQ7jJ/+w2bkL+zDDjQuK7pM4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "poly-workspace-ai-sa@poly-team-core.iam.gserviceaccount.com",
+  "client_id": "104719952292647605216",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/poly-workspace-ai-sa%40poly-team-core.iam.gserviceaccount.com"
+}
