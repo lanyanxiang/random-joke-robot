@@ -1,3 +1,4 @@
 import { HttpError } from "./http-error";
+import { NotFoundError } from "./not-found-error";
 
-export { HttpError };
+export { HttpError, NotFoundError };
