@@ -1,10 +1,21 @@
 import express, { Request, Response } from "express";
+import fetch from "node-fetch";
 
 import { getVoice } from "../apis/google-text-to-speech";
+import { InternalServerError } from "../errors";
 
 const router = express.Router();
 
-router.get("/", (req: Request, res: Response) => {});
+router.get("/", async (req: Request, res: Response) => {
+  try {
+    const rawJoke = await getSingleJoke();
+    const joke = processLineBreak(rawJoke);
+    const audio = await getVoice(joke, "en-US");
+    res.send({ text: joke, audio: audio });
+  } catch (error) {
+    throw new InternalServerError("Could not obtain joke at this time");
+  }
+});
 
 // Helpers
 /**
@@ -23,11 +34,14 @@ const getSingleJoke = async () => {
 };
 
 /**
- * Obtain audio of the given joke
- * @param joke joke to be converted to audio
+ * Return a new text with all new line characters replaced to "..."
+ * This function can be applied to text before converting it into audio,
+ * so that pauses can be added whenever a new line character is found.
+ *
+ * @param text the text to be processed
  */
-const getJokeAudio = async (joke: string) => {
-  getVoice("hello world", "en-US");
+const processLineBreak = (text: string) => {
+  return text.replace("/\n/gi", " ... ");
 };
 
 export { router };

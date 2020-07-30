@@ -9,6 +9,12 @@ interface ISynthesizeSpeechRequest {
   audioConfig?: Object;
 }
 
+/**
+ * Return voice encoded using LINEAR16 corresponding to message
+ * in the specified language languageCode.
+ * @param message the message to convert to voice
+ * @param languageCode the language code of the message
+ */
 export const getVoice = async (message: string, languageCode: string) => {
   const request: ISynthesizeSpeechRequest = {
     input: { text: message },
@@ -22,5 +28,5 @@ export const getVoice = async (message: string, languageCode: string) => {
 
   const [response] = await client.synthesizeSpeech(request);
 
-  console.log(response);
+  return response.audioContent;
 };
