@@ -1,13 +1,20 @@
 /* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-body {
+*,
+::after,
+::before {
   margin: 0;
+}
+
+body {
   min-height: 100vh;
   background: #45badd;
+  font-family: "Muli", sans-serif;
 }
 
 .container {
@@ -21,6 +28,39 @@ body {
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+#joke {
+  display: none;
+}
+
+.joke-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.joke-container .joke-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.joke-container h6 {
+  opacity: 0.6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.joke-container p#joke-content {
+  margin: 10px 0;
 }
 
 button {

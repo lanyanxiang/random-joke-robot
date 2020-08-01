@@ -8,11 +8,17 @@ const router = express.Router();
 
 router.get("/", async (req: Request, res: Response) => {
   try {
-    const rawJoke = await getSingleJoke();
-    const joke = processLineBreak(rawJoke);
+    const jokeData = await getSingleJoke();
+
+    const joke = processLineBreak(jokeData.joke);
+    const category = jokeData.category;
+    const id = jokeData.id;
+
     const audio = await getVoice(joke, "en-US");
-    res.send({ text: joke, audio: audio });
+
+    res.send({ text: joke, category: category, id: id, audio: audio });
   } catch (error) {
+    console.error(error);
     throw new InternalServerError("Could not obtain joke at this time");
   }
 });
@@ -27,7 +33,7 @@ const getSingleJoke = async () => {
       "https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist&type=single";
     const response = await fetch(url);
     const data = await response.json();
-    return data.joke;
+    return data;
   } catch (error) {
     console.error(error);
   }
